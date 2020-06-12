@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/registerProfileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_perm_identity_black_24dp"/>
+
+    <Button
+        android:id="@+id/registerBrowseImageBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/registerProfileImage"
+        android:layout_below="@id/registerProfileImage"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Browse"
+        android:textSize="15sp"
+        android:gravity="center_vertical|center"
+        android:padding="5dp"/>
+
+
+    <EditText
+        android:id="@+id/registerUserNameTxt"
+        android:layout_below="@id/registerProfileImage"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="text"
+        android:hint="User Name"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/registerEmailTxt"
+        android:layout_below="@id/registerUserNameTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/registerPhoneTxt"
+        android:layout_below="@id/registerEmailTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="phone"
+        android:hint="Contact Number"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/registerPasswordTxt"
+        android:layout_below="@id/registerPhoneTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/registerConfirmPasswordTxt"
+        android:layout_below="@id/registerPasswordTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:id="@+id/registerSubmitBtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registerConfirmPasswordTxt"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textSize="15sp"
+        android:gravity="center_vertical|center"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/registerSubmitBtn">
+
+        <TextView
+            android:id="@+id/RegisterLoginTxtView"
+            android:text="Already Registered? "
+            android:gravity="center|center_vertical"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/RegisterLoginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="SIGN IN NOW"
+            android:textSize="15sp"
+            android:padding="3dp"
+            android:gravity="center_vertical|center"
+            android:clickable="true"/>
+
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

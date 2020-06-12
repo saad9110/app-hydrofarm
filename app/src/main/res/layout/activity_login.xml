@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_perm_identity_black_24dp"/>
+
+
+    <EditText
+        android:id="@+id/loginEmailTxt"
+        android:layout_below="@id/loginImage"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/loginPasswordTxt"
+        android:layout_below="@id/loginEmailTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:id="@+id/loginSubmitBtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginPasswordTxt"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textSize="15sp"
+        android:gravity="center_vertical|center"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/loginSubmitBtn">
+
+        <TextView
+            android:id="@+id/loginRegisterTxtView"
+            android:text="Not Registered? "
+            android:gravity="center|center_vertical"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/loginRegisterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="REGISTER NOW"
+            android:textSize="15sp"
+            android:padding="3dp"
+            android:gravity="center_vertical|center"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/forgetpasswordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="FORGET PASSWORD"
+            android:textSize="15sp"
+            android:padding="3dp"
+            android:gravity="center_vertical|center"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>

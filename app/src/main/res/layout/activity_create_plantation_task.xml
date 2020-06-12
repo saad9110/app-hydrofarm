@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePlantationTask">
+
+    <EditText
+        android:id="@+id/createPlantationTaskPlantNameTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="text"
+        android:hint="Plant Name or Type"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/createPlantationTaskDeviceIDSpinner"
+        android:layout_below="@id/createPlantationTaskPlantNameTxt"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType=""
+        android:hint="DeviceID"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/createPlantationTaskSelectSeedingDateTxt"
+        android:layout_below="@id/createPlantationTaskDeviceIDSpinner"
+        android:layout_width="300dp"
+        android:gravity="center|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:inputType="date"
+        android:hint="Seeding Date"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>
